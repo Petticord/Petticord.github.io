@@ -202,7 +202,7 @@ body::before {
 
 /* ─── RESEARCH CARDS ─── */
 .research-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
 }
 
 .research-card {
@@ -646,7 +646,6 @@ body::before {
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
   :root { --page-pad: 40px; }
-  .research-grid { grid-template-columns: repeat(2, 1fr); }
   .stat-bar { grid-template-columns: repeat(2, 1fr); }
   .stat-card:nth-child(2) { border-right: none; }
   .pub-group { grid-template-columns: 1fr; }

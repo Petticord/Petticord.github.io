@@ -42,11 +42,11 @@
     </div>
 
     <div id="hero-prefix" style="font-family:var(--font-sans);font-size:14px;color:var(--muted);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;transition:opacity 0.45s ease;animation:fadeIn 0.8s 0.4s both;">
-      Uncovering the hidden dynamics of
+      Engineering solutions for
     </div>
 
     <h1 id="hero-highlight" style="font-family:var(--font-serif);font-size:clamp(36px,4.2vw,60px);font-weight:500;line-height:1.15;letter-spacing:-0.01em;color:var(--warm);max-width:700px;transition:all 0.6s cubic-bezier(0.16,1,0.3,1);animation:fadeIn 0.8s 0.5s both;">
-      plant–soil–microbe interactions.
+      phosphorus pollution &amp; phytoremediation.
     </h1>
 
     <!-- Line indicators -->
@@ -72,14 +72,11 @@
     </div>
   </div>
 
-  <!-- Right: Field photo -->
+  <!-- Right: Field photo (rotates with hero text) -->
   <div class="hero-photo-wrap" style="position:relative;animation:fadeIn 1s 0.4s both;">
     <div style="position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:2px solid var(--border-dark);z-index:0;"></div>
     <div style="position:relative;z-index:1;width:100%;aspect-ratio:3/4;overflow:hidden;background:var(--grid);">
-      <img src="images/field-photo-1.jpg" alt="Dan Petticord in the tropical forest canopy" style="width:100%;height:100%;object-fit:cover;">
-    </div>
-    <div style="margin-top:16px;font-family:var(--font-sans);font-size:11px;color:var(--muted);font-style:italic;text-align:right;">
-      Tropical forest canopy, field research
+      <img id="hero-photo" src="images/DanPushingGPR.jpeg" alt="Dan Petticord in the field" style="width:100%;height:100%;object-fit:cover;transition:opacity 0.5s ease;">
     </div>
   </div>
 
@@ -116,22 +113,28 @@
 <section class="section">
   <div class="section-label fade-in">Research Areas</div>
   <div class="research-grid">
-    <a href="research.html" class="research-card fade-in" data-color="warm">
+    <a href="research/phosphorus-cycling.html" class="research-card fade-in" data-color="warm">
       <div class="research-card-num">01</div>
-      <div class="research-card-title">P Cycling in Agroecosystems</div>
+      <div class="research-card-title">Phosphorus Cycling &amp; Phytoremediation</div>
       <div class="research-card-desc">Engineering vegetation harvest strips and phytoremediation strategies to mitigate legacy phosphorus pollution from historically fertilized ranchlands, pastures, and wetlands.</div>
       <div class="research-card-more">Learn more →</div>
     </a>
-    <a href="research.html" class="research-card fade-in anim-delay-1" data-color="forest">
+    <a href="research/microbial-assembly.html" class="research-card fade-in anim-delay-1" data-color="teal">
       <div class="research-card-num">02</div>
+      <div class="research-card-title">Microbial Community Assembly</div>
+      <div class="research-card-desc">Quantifying how belowground fungal and bacterial communities assemble and mediate nutrient cycling, plant health, and ecosystem-level patterns — from phyllosphere to rhizosphere.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/carbon-cycling.html" class="research-card fade-in anim-delay-2" data-color="forest">
+      <div class="research-card-num">03</div>
       <div class="research-card-title">Carbon Cycling in Forests</div>
       <div class="research-card-desc">Investigating how soil microbial communities drive organic carbon accumulation and nutrient dynamics across tropical forest succession, land-use change, and biogeochemical gradients.</div>
       <div class="research-card-more">Learn more →</div>
     </a>
-    <a href="research.html" class="research-card fade-in anim-delay-2" data-color="teal">
-      <div class="research-card-num">03</div>
-      <div class="research-card-title">Microbial Community Function</div>
-      <div class="research-card-desc">Quantifying how belowground fungal and bacterial communities mediate nutrient cycling, plant health, and ecosystem-level patterns — from phyllosphere to rhizosphere, Panama to China.</div>
+    <a href="research/plant-soil-feedbacks.html" class="research-card fade-in anim-delay-3" data-color="drought">
+      <div class="research-card-num">04</div>
+      <div class="research-card-title">Plant–Soil Feedbacks &amp; Tropical Diversity</div>
+      <div class="research-card-desc">Examining how mutualist and pathogen fungi in soils drive conspecific negative density dependence and maintain the extraordinary diversity of tropical forests.</div>
       <div class="research-card-more">Learn more →</div>
     </a>
   </div>
@@ -185,28 +188,10 @@
   <div class="section-label fade-in">Selected Publications</div>
 
   <div class="pub-item fade-in">
-    <div class="pub-num">[24]</div>
-    <div>
-      <div class="pub-title"><span class="pub-first-badge">1st Author</span>Conversion from farmland to orchard or agroforestry improves soil carbon sequestration by enhancing microbial biological activity in Northwest China</div>
-      <div class="pub-journal">PLOS ONE</div>
-    </div>
-    <div class="pub-year">2025</div>
-  </div>
-
-  <div class="pub-item fade-in">
     <div class="pub-num">[23]</div>
     <div>
       <div class="pub-title"><span class="pub-first-badge">1st Author</span>Phosphorus mitigation through hay harvest: Addressing legacy P in subtropical pasture</div>
-      <div class="pub-journal">Agric. Ecosystems &amp; Environ.</div>
-    </div>
-    <div class="pub-year">2025</div>
-  </div>
-
-  <div class="pub-item fade-in">
-    <div class="pub-num">[22]</div>
-    <div>
-      <div class="pub-title"><span class="pub-first-badge">1st Author</span>Spatial decoupling of biological and geochemical phosphorus cycling in podzolized soils</div>
-      <div class="pub-journal">Soil Systems</div>
+      <div class="pub-journal">Agric. Ecosystems &amp; Environ. · <span style="color:var(--warm);">Phosphorus Cycling</span></div>
     </div>
     <div class="pub-year">2025</div>
   </div>
@@ -214,17 +199,17 @@
   <div class="pub-item fade-in">
     <div class="pub-num">[11]</div>
     <div>
-      <div class="pub-title"><span class="pub-first-badge">1st Author</span>From nature to urbanity: Exploring phyllosphere microbiome and functional gene responses to the Anthropocene</div>
-      <div class="pub-journal">New Phytologist</div>
+      <div class="pub-title"><span class="pub-cofirst-badge">Co-1st</span>From nature to urbanity: Exploring phyllosphere microbiome and functional gene responses to the Anthropocene</div>
+      <div class="pub-journal">New Phytologist · <span style="color:var(--teal);">Microbial Assembly</span></div>
     </div>
     <div class="pub-year">2024</div>
   </div>
 
   <div class="pub-item fade-in">
-    <div class="pub-num">[6]</div>
+    <div class="pub-num">[5]</div>
     <div>
-      <div class="pub-title">Fungal community dissimilarity predicts plant–soil feedback strength in a lowland tropical forest</div>
-      <div class="pub-journal">Ecology — Top 10% most viewed, 2023</div>
+      <div class="pub-title">Microbial controls over soil priming effects under chronic nitrogen and phosphorus additions in subtropical forests</div>
+      <div class="pub-journal">The ISME Journal · <span style="color:var(--forest);">Carbon Cycling</span></div>
     </div>
     <div class="pub-year">2023</div>
   </div>
@@ -233,9 +218,18 @@
     <div class="pub-num">[2]</div>
     <div>
       <div class="pub-title">Mutualist and pathogen traits interact to affect plant community structure in a spatially explicit model</div>
-      <div class="pub-journal">Nature Communications</div>
+      <div class="pub-journal">Nature Communications · <span style="color:var(--drought);">Plant–Soil Feedbacks</span></div>
     </div>
     <div class="pub-year">2020</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[6]</div>
+    <div>
+      <div class="pub-title">Fungal community dissimilarity predicts plant–soil feedback strength in a lowland tropical forest</div>
+      <div class="pub-journal">Ecology — Top 10% most viewed · <span style="color:var(--drought);">Plant–Soil Feedbacks</span></div>
+    </div>
+    <div class="pub-year">2023</div>
   </div>
 
   <div class="btn--center fade-in">

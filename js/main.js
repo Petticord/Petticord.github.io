@@ -46,14 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroIndicators = document.querySelectorAll('.hero-indicator');
 
   if (heroPrefix && heroHighlight) {
-    const GEM_COLORS = ['#B5332E', '#2E6B6B', '#C67D3B', '#4A7C3F'];
+    const GEM_COLORS = ['#B5332E', '#2E6B6B', '#4A7C3F', '#C67D3B'];
     const lines = [
-      { prefix: 'Uncovering the hidden dynamics of', highlight: 'plant–soil–microbe interactions.' },
       { prefix: 'Engineering solutions for', highlight: 'phosphorus pollution & phytoremediation.' },
+      { prefix: 'Uncovering the hidden dynamics of', highlight: 'microbial community assembly.' },
       { prefix: 'Tracing nutrients through', highlight: 'forests, pastures, and soils.' },
-      { prefix: 'Bridging biogeochemistry and', highlight: 'ecosystem conservation.' },
+      { prefix: 'Bridging biogeochemistry and', highlight: 'tropical diversity & conservation.' },
+    ];
+    const heroImages = [
+      'images/DanPushingGPR.jpeg',
+      'images/Climbing.jpg',
+      'images/DanRatSnake.jpeg',
+      'images/DanScrubJayFlorida.jpeg',
     ];
 
+    const heroImg = document.getElementById('hero-photo');
     let current = 0;
 
     function rotateLine() {
@@ -61,12 +68,19 @@ document.addEventListener('DOMContentLoaded', () => {
       heroPrefix.style.opacity = '0';
       heroHighlight.style.opacity = '0';
       heroHighlight.style.transform = 'translateY(14px)';
+      if (heroImg) heroImg.style.opacity = '0';
 
       setTimeout(() => {
         current = (current + 1) % lines.length;
         heroPrefix.textContent = lines[current].prefix;
         heroHighlight.textContent = lines[current].highlight;
         heroHighlight.style.color = GEM_COLORS[current % GEM_COLORS.length];
+
+        // Swap hero image
+        if (heroImg) {
+          heroImg.src = heroImages[current];
+          heroImg.style.opacity = '1';
+        }
 
         // Update indicators
         heroIndicators.forEach((ind, i) => {

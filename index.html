@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dan Petticord — Ecologist & Postdoctoral Researcher</title>
+  <meta name="description" content="Dan Petticord is an ecologist studying plant-soil-microbe interactions, phosphorus phytoremediation, and biogeochemistry at the Cary Institute for Ecosystem Studies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="nav">
+  <a href="index.html" class="nav-name">Dan Petticord</a>
+  <div class="nav-links">
+    <a href="research.html" class="nav-link" data-page="research">Research</a>
+    <a href="publications.html" class="nav-link" data-page="publications">Publications</a>
+    <a href="teaching.html" class="nav-link" data-page="teaching">Teaching</a>
+    <a href="service.html" class="nav-link" data-page="service">Service</a>
+    <a href="cv.html" class="nav-link" data-page="cv">CV</a>
+    <a href="about.html" class="nav-link" data-page="about">About</a>
+    <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section style="min-height:100vh;display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center;padding:140px var(--page-pad) 80px;position:relative;overflow:hidden;" class="hero-grid">
+
+  <!-- Ambient glow -->
+  <div style="position:absolute;top:10%;right:25%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(198,125,59,0.06) 0%,transparent 70%);filter:blur(80px);pointer-events:none;"></div>
+
+  <!-- Left: Text -->
+  <div style="position:relative;z-index:2;">
+    <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:40px;border-left:3px solid var(--warm);padding-left:16px;animation:fadeIn 0.8s 0.2s both;">
+      Postdoctoral Researcher · Cary Institute for Ecosystem Studies
+    </div>
+
+    <div id="hero-prefix" style="font-family:var(--font-sans);font-size:14px;color:var(--muted);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;transition:opacity 0.45s ease;animation:fadeIn 0.8s 0.4s both;">
+      Uncovering the hidden dynamics of
+    </div>
+
+    <h1 id="hero-highlight" style="font-family:var(--font-serif);font-size:clamp(36px,4.2vw,60px);font-weight:500;line-height:1.15;letter-spacing:-0.01em;color:var(--warm);max-width:700px;transition:all 0.6s cubic-bezier(0.16,1,0.3,1);animation:fadeIn 0.8s 0.5s both;">
+      plant–soil–microbe interactions.
+    </h1>
+
+    <!-- Line indicators -->
+    <div style="display:flex;gap:6px;margin-top:36px;animation:fadeIn 0.8s 0.6s both;">
+      <div class="hero-indicator" style="width:36px;height:3px;background:var(--warm);border-radius:1.5px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);"></div>
+      <div class="hero-indicator" style="width:12px;height:3px;background:var(--grid);border-radius:1.5px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);"></div>
+      <div class="hero-indicator" style="width:12px;height:3px;background:var(--grid);border-radius:1.5px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);"></div>
+      <div class="hero-indicator" style="width:12px;height:3px;background:var(--grid);border-radius:1.5px;transition:all 0.5s cubic-bezier(0.16,1,0.3,1);"></div>
+    </div>
+
+    <!-- Links -->
+    <div style="margin-top:44px;display:flex;gap:28px;font-family:var(--font-sans);font-size:13px;color:var(--muted);animation:fadeIn 0.8s 0.8s both;">
+      <a href="https://scholar.google.com/citations?user=s1wx64YAAAAJ&hl=en" target="_blank" class="footer-link">Google Scholar</a>
+      <a href="https://github.com/Dpetticord3" target="_blank" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">ORCID</a>
+      <a href="#" class="footer-link">LinkedIn</a>
+    </div>
+
+    <!-- Buttons -->
+    <div style="margin-top:36px;display:flex;gap:14px;animation:fadeIn 0.8s 1s both;">
+      <a href="research.html" class="btn btn--primary">View Research</a>
+      <a href="cv.html" class="btn btn--outline">Download CV</a>
+    </div>
+  </div>
+
+  <!-- Right: Field photo -->
+  <div class="hero-photo-wrap" style="position:relative;animation:fadeIn 1s 0.4s both;">
+    <div style="position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:2px solid var(--border-dark);z-index:0;"></div>
+    <div style="position:relative;z-index:1;width:100%;aspect-ratio:3/4;overflow:hidden;background:var(--grid);">
+      <img src="images/field-photo-1.jpg" alt="Dan Petticord in the tropical forest canopy" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div style="margin-top:16px;font-family:var(--font-sans);font-size:11px;color:var(--muted);font-style:italic;text-align:right;">
+      Tropical forest canopy, field research
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;animation:pulse 2.5s ease-in-out infinite;">
+    <span style="font-family:var(--font-mono);font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="var(--muted)" stroke-width="1.5">
+      <path d="M7 3L7 15M7 15L2.5 10.5M7 15L11.5 10.5"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stat-bar">
+  <div class="stat-card fade-in">
+    <div class="stat-num" style="color:var(--warm);">24</div>
+    <div class="stat-label">Peer-Reviewed Publications</div>
+  </div>
+  <div class="stat-card fade-in anim-delay-1">
+    <div class="stat-num" style="color:var(--teal);">9</div>
+    <div class="stat-label">In Review or Prep</div>
+  </div>
+  <div class="stat-card fade-in anim-delay-2">
+    <div class="stat-num" style="color:var(--drought);">$342K</div>
+    <div class="stat-label">Competitive Funding</div>
+  </div>
+  <div class="stat-card fade-in anim-delay-3">
+    <div class="stat-num" style="color:var(--forest);">4</div>
+    <div class="stat-label">First-Author Papers, 2025</div>
+  </div>
+</div>
+
+<!-- ═══ RESEARCH AREAS ═══ -->
+<section class="section">
+  <div class="section-label fade-in">Research Areas</div>
+  <div class="research-grid">
+    <a href="research/phosphorus.html" class="research-card fade-in" data-color="warm">
+      <div class="research-card-num">01</div>
+      <div class="research-card-title">Phosphorus Phytoremediation</div>
+      <div class="research-card-desc">Engineering vegetation harvest strips to mitigate legacy phosphorus pollution from historically fertilized ranchlands and pastures.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/plant-soil-microbe.html" class="research-card fade-in anim-delay-1" data-color="teal">
+      <div class="research-card-num">02</div>
+      <div class="research-card-title">Plant–Soil–Microbe Interactions</div>
+      <div class="research-card-desc">Quantifying how belowground fungal communities mediate nutrient cycling, plant health, and ecosystem-level patterns across scales.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/tropical-forest.html" class="research-card fade-in anim-delay-2" data-color="forest">
+      <div class="research-card-num">03</div>
+      <div class="research-card-title">Tropical Forest Ecology</div>
+      <div class="research-card-desc">Understanding how mutualist and pathogen fungi shape diversity patterns in tropical forests, from Panama to China.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/biogeochemistry.html" class="research-card fade-in anim-delay-3" data-color="drought">
+      <div class="research-card-num">04</div>
+      <div class="research-card-title">Biogeochemistry</div>
+      <div class="research-card-desc">Tracing carbon and phosphorus movement underground using stable isotopes, ground-penetrating radar, and novel techniques.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/soil-carbon.html" class="research-card fade-in anim-delay-4" data-color="slate">
+      <div class="research-card-num">05</div>
+      <div class="research-card-title">Soil Carbon Dynamics</div>
+      <div class="research-card-desc">Investigating microbial controls on soil organic carbon accumulation across land-use types and forest succession gradients.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+    <a href="research/conservation.html" class="research-card fade-in anim-delay-5" data-color="plum">
+      <div class="research-card-num">06</div>
+      <div class="research-card-title">Conservation & Sustainability</div>
+      <div class="research-card-desc">Translating mechanistic ecological research into actionable insights for ecosystem conservation and agricultural management.</div>
+      <div class="research-card-more">Learn more →</div>
+    </a>
+  </div>
+</section>
+
+<!-- ═══ JOURNEY ═══ -->
+<section class="section">
+  <div class="section-label fade-in">Journey</div>
+  <div style="max-width:740px;padding-left:24px;">
+    <div class="journey-item fade-in">
+      <div class="journey-dot" style="background:var(--warm);box-shadow:0 0 0 1px var(--warm);"></div>
+      <div class="journey-period">2025–</div>
+      <div>
+        <div class="journey-role">Postdoctoral Associate</div>
+        <div class="journey-place" style="color:var(--warm);">Cary Institute for Ecosystem Studies</div>
+        <div class="journey-detail">MESS Lab · Advisor: Dr. Jane Lucas</div>
+      </div>
+    </div>
+    <div class="journey-item fade-in anim-delay-1">
+      <div class="journey-dot" style="background:var(--teal);box-shadow:0 0 0 1px var(--teal);"></div>
+      <div class="journey-period">2020–2025</div>
+      <div>
+        <div class="journey-role">Ph.D., Ecology & Evolutionary Biology</div>
+        <div class="journey-place" style="color:var(--teal);">Cornell University</div>
+        <div class="journey-detail">NSF Graduate Research Fellow · Advisor: Dr. Jed P. Sparks</div>
+      </div>
+    </div>
+    <div class="journey-item fade-in anim-delay-2">
+      <div class="journey-dot" style="background:var(--forest);box-shadow:0 0 0 1px var(--forest);"></div>
+      <div class="journey-period">2019–2020</div>
+      <div>
+        <div class="journey-role">Research Fellow</div>
+        <div class="journey-place" style="color:var(--forest);">Smithsonian Tropical Research Institute</div>
+        <div class="journey-detail">Panama</div>
+      </div>
+    </div>
+    <div class="journey-item fade-in anim-delay-3">
+      <div class="journey-dot" style="background:var(--drought);box-shadow:0 0 0 1px var(--drought);"></div>
+      <div class="journey-period">2015–2019</div>
+      <div>
+        <div class="journey-role">A.B., Ecology & Evolutionary Biology</div>
+        <div class="journey-place" style="color:var(--drought);">Princeton University</div>
+        <div class="journey-detail">Cum Laude · Minor: Environmental Science</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SELECTED PUBLICATIONS ═══ -->
+<section class="section section--bordered">
+  <div class="section-label fade-in">Selected Publications</div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[24]</div>
+    <div>
+      <div class="pub-title"><span class="pub-first-badge">1st Author</span>Conversion from farmland to orchard or agroforestry improves soil carbon sequestration by enhancing microbial biological activity in Northwest China</div>
+      <div class="pub-journal">PLOS ONE</div>
+    </div>
+    <div class="pub-year">2025</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[23]</div>
+    <div>
+      <div class="pub-title"><span class="pub-first-badge">1st Author</span>Phosphorus mitigation through hay harvest: Addressing legacy P in subtropical pasture</div>
+      <div class="pub-journal">Agric. Ecosystems &amp; Environ.</div>
+    </div>
+    <div class="pub-year">2025</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[22]</div>
+    <div>
+      <div class="pub-title"><span class="pub-first-badge">1st Author</span>Spatial decoupling of biological and geochemical phosphorus cycling in podzolized soils</div>
+      <div class="pub-journal">Soil Systems</div>
+    </div>
+    <div class="pub-year">2025</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[11]</div>
+    <div>
+      <div class="pub-title"><span class="pub-first-badge">1st Author</span>From nature to urbanity: Exploring phyllosphere microbiome and functional gene responses to the Anthropocene</div>
+      <div class="pub-journal">New Phytologist</div>
+    </div>
+    <div class="pub-year">2024</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[6]</div>
+    <div>
+      <div class="pub-title">Fungal community dissimilarity predicts plant–soil feedback strength in a lowland tropical forest</div>
+      <div class="pub-journal">Ecology — Top 10% most viewed, 2023</div>
+    </div>
+    <div class="pub-year">2023</div>
+  </div>
+
+  <div class="pub-item fade-in">
+    <div class="pub-num">[2]</div>
+    <div>
+      <div class="pub-title">Mutualist and pathogen traits interact to affect plant community structure in a spatially explicit model</div>
+      <div class="pub-journal">Nature Communications</div>
+    </div>
+    <div class="pub-year">2020</div>
+  </div>
+
+  <div class="btn--center fade-in">
+    <a href="publications.html" class="btn btn--primary">View All 24 Publications →</a>
+  </div>
+</section>
+
+<!-- ═══ TEACHING ═══ -->
+<section class="section">
+  <div class="section-label fade-in">Teaching</div>
+  <div class="teaching-grid">
+    <div class="teaching-card fade-in">
+      <div class="teaching-strip" style="background:var(--warm);"></div>
+      <div class="teaching-header">
+        <span class="teaching-role" style="color:var(--warm);">Instructor of Record</span>
+        <span class="teaching-semester">Fall 2024</span>
+      </div>
+      <div class="teaching-course">Topics in Biogeochemistry</div>
+      <div class="teaching-code">BIOEE 7600</div>
+      <div class="teaching-note">Graduate seminar designed and taught independently</div>
+    </div>
+    <div class="teaching-card fade-in anim-delay-1">
+      <div class="teaching-strip" style="background:var(--drought);"></div>
+      <div class="teaching-header">
+        <span class="teaching-role" style="color:var(--drought);">Instructor of Record</span>
+        <span class="teaching-semester">Fall 2023</span>
+      </div>
+      <div class="teaching-course">What's for Dinner</div>
+      <div class="teaching-code">BIOEE 1640</div>
+      <div class="teaching-note">Undergraduate course on food systems &amp; sustainability</div>
+    </div>
+    <div class="teaching-card fade-in anim-delay-2">
+      <div class="teaching-strip" style="background:var(--teal);"></div>
+      <div class="teaching-header">
+        <span class="teaching-role" style="color:var(--teal);">Co-Instructor</span>
+        <span class="teaching-semester">Spring 2024</span>
+      </div>
+      <div class="teaching-course">Graduate Field Course</div>
+      <div class="teaching-code">BIOEE 6602</div>
+    </div>
+    <div class="teaching-card fade-in anim-delay-3">
+      <div class="teaching-strip" style="background:var(--forest);"></div>
+      <div class="teaching-header">
+        <span class="teaching-role" style="color:var(--forest);">Teaching Assistant</span>
+        <span class="teaching-semester">2021–2024</span>
+      </div>
+      <div class="teaching-course">Advanced Ecology</div>
+      <div class="teaching-code">BIOEE 3610</div>
+      <div class="teaching-note">Lab TA, multiple semesters</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact-section fade-in">
+  <div class="contact-title">Get in touch.</div>
+  <div class="contact-desc">I'm always interested in new collaborations, speaking invitations, and conversations about ecology and sustainability.</div>
+  <a href="mailto:petticordd@caryinstitute.org" class="contact-email">petticordd@caryinstitute.org</a>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div>
+    <div class="footer-name">Dan Petticord</div>
+    <div class="footer-sub">Cary Institute for Ecosystem Studies · Millbrook, NY</div>
+  </div>
+  <div class="footer-links">
+    <a href="https://scholar.google.com/citations?user=s1wx64YAAAAJ&hl=en" target="_blank" class="footer-link">Google Scholar</a>
+    <a href="#" class="footer-link">ORCID</a>
+    <a href="https://github.com/Dpetticord3" target="_blank" class="footer-link">GitHub</a>
+    <a href="#" class="footer-link">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

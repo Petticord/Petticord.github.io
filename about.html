@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Dan Petticord</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-name">Dan Petticord</a>
+  <div class="nav-links">
+    <a href="research.html" class="nav-link">Research</a>
+    <a href="publications.html" class="nav-link">Publications</a>
+    <a href="teaching.html" class="nav-link">Teaching</a>
+    <a href="service.html" class="nav-link">Service</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <a href="about.html" class="nav-link active">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-label">About</div>
+  <h1 class="page-header-title">About Dan</h1>
+</header>
+
+<section class="section" style="display:grid;grid-template-columns:1fr 360px;gap:60px;align-items:start;">
+  <div class="prose fade-in">
+    <p>Dan hails from <strong>Northeast Ohio</strong>. He currently lives outside of Ithaca, New York with his wife, Julia, and their pets (two black cats and a black Labrador Retriever).</p>
+    <p>Dan earned his A.B. from <strong>Princeton University</strong>, where he studied ecology and evolutionary biology, played NCAA Division I football, and conducted field research in Kenya using radio telemetry and drone technology to study animal movement and landscape change.</p>
+    <p>After Princeton, he was a fellow at the <strong>Smithsonian Tropical Research Institute</strong> in Panama, where he studied how the interplay of mutualist and pathogen fungi in soils impacts large-scale patterns of diversity in the tropical rainforest.</p>
+    <p>Dan completed his Ph.D. at <strong>Cornell University</strong> as an NSF Graduate Research Fellow, focusing on phytoremediation and the conservation of phosphorus. He is now a Postdoctoral Associate at the <strong>Cary Institute for Ecosystem Studies</strong> in the MESS Lab.</p>
+    <p>Outside of science, Dan is an avid reader and photographer. He and his family love to travel — and to learn just how big (and how small!) our world can be.</p>
+
+    <h3>Field Experience</h3>
+    <p>Research experience across diverse ecosystems and geographies, including subtropical pastures and wetlands (Florida, USA), tropical forests (Barro Colorado Island, Panama; Oaxaca, Mexico), savannas and rangelands (Mpala Research Centre, Kenya), and temperate forests (northeastern USA). Trained in first aid, 4×4 driving, remote fieldwork logistics, UAS/drone operations, radio telemetry, and field medicine.</p>
+  </div>
+
+  <!-- Photo gallery placeholder -->
+  <div class="fade-in anim-delay-2" style="position:sticky;top:120px;">
+    <div style="position:relative;">
+      <div style="position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:2px solid var(--border-dark);z-index:0;"></div>
+      <div style="position:relative;z-index:1;width:100%;aspect-ratio:3/4;overflow:hidden;background:var(--grid);border:1px solid var(--border);">
+        <img src="images/field-photo-1.jpg" alt="Dan in the field" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+    <p style="margin-top:16px;font-family:var(--font-sans);font-size:11px;color:var(--muted);font-style:italic;text-align:right;">
+      Tropical forest canopy, field research
+    </p>
+    <!-- Additional photo slots -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;">
+      <div style="aspect-ratio:1;background:var(--grid);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:9px;color:var(--muted);">Photo 2</div>
+      <div style="aspect-ratio:1;background:var(--grid);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:9px;color:var(--muted);">Photo 3</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section fade-in">
+  <div class="contact-title">Get in touch.</div>
+  <div class="contact-desc">I'm always interested in new collaborations, speaking invitations, and conversations about ecology and sustainability.</div>
+  <a href="mailto:petticordd@caryinstitute.org" class="contact-email">petticordd@caryinstitute.org</a>
+</section>
+
+<footer class="footer">
+  <div><div class="footer-name">Dan Petticord</div><div class="footer-sub">Cary Institute for Ecosystem Studies · Millbrook, NY</div></div>
+  <div class="footer-links">
+    <a href="https://scholar.google.com/citations?user=s1wx64YAAAAJ&hl=en" target="_blank" class="footer-link">Google Scholar</a>
+    <a href="#" class="footer-link">ORCID</a>
+    <a href="https://github.com/Dpetticord3" target="_blank" class="footer-link">GitHub</a>
+    <a href="#" class="footer-link">LinkedIn</a>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

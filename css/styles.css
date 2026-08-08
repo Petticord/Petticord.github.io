@@ -222,7 +222,7 @@ body::before {
 
 /* ─── STAT BAR ─── */
 .stat-bar {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   border-top: 2px solid var(--border-dark);
   border-bottom: 2px solid var(--border-dark);
 }
@@ -250,6 +250,10 @@ body::before {
 .research-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
 }
+
+/* ─── SIMPLE GRIDS ─── */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
 .research-card {
   padding: 44px 36px; border: 1px solid var(--border);
@@ -790,8 +794,7 @@ body::before {
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
   :root { --page-pad: 40px; }
-  .stat-bar { grid-template-columns: repeat(2, 1fr); }
-  .stat-card:nth-child(2) { border-right: none; }
+  .stat-card { padding: 44px 20px; }
   .pub-group { grid-template-columns: 1fr; }
   .pub-group-photo { max-width: 240px; }
   .research-sub-hero { grid-template-columns: 1fr; }
@@ -816,6 +819,7 @@ body::before {
   .nav-hamburger { display: block; z-index: 110; }
   .research-grid { grid-template-columns: 1fr; }
   .teaching-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
   .stat-bar { grid-template-columns: 1fr; }
   .stat-card { border-right: none; border-bottom: 1px solid var(--border); }
   .hero-grid { grid-template-columns: 1fr !important; }

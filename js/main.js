@@ -34,30 +34,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ─── HERO TEXT ROTATION (homepage only) ─── */
+  /* ─── HERO ROTATION (homepage only) ─── */
   const heroPrefix = document.getElementById('hero-prefix');
   const heroHighlight = document.getElementById('hero-highlight');
   const heroIndicators = document.querySelectorAll('.hero-indicator');
+  const heroImg = document.getElementById('hero-photo');
 
   if (heroPrefix && heroHighlight) {
-    const GEM_COLORS = ['#B5332E', '#2E6B6B', '#C67D3B', '#4A7C3F'];
+    // farms = golden, forests = green, wherever either word appears.
+    // The photo shows the system being studied (the first noun); the headline
+    // colour follows the word being explained (the second noun).
+    const GOLD = '#C67D3B', GREEN = '#4A7C3F', TEAL = '#2E6B6B';
     const lines = [
-      { prefix: 'Engineering sustainable solutions for', highlight: 'phosphorus pollution.' },
-      { prefix: 'Uncovering the hidden dynamics of', highlight: 'microbial community assembly.' },
-      { prefix: 'Tracing nutrients through', highlight: 'natural and working landscapes.' },
-      { prefix: 'Bridging biogeochemistry and', highlight: 'conservation.' },
-    ];
-    const heroImages = [
-      'images/DanPushingGPR.jpeg',
-      'images/Climbing.jpg',
-      'images/sortingGrass.jpg',
-      'images/ongoingWorkCanopy.jpeg',
+      {
+        prefix: `Studying <span style="color:${GREEN};">forests</span> to understand`,
+        highlight: 'farms.', color: GOLD, image: 'images/Climbing.jpg',
+      },
+      {
+        prefix: `Studying <span style="color:${GOLD};">farms</span> to understand`,
+        highlight: 'forests.', color: GREEN, image: 'images/DanPushingGPR.jpeg',
+      },
+      {
+        prefix: 'Studying how communities assemble',
+        highlight: 'from the ground up.', color: TEAL, image: 'images/DC_digging.jpg',
+      },
     ];
 
     // Preload all hero images for smooth transitions
-    heroImages.forEach(src => { const img = new Image(); img.src = src; });
+    lines.forEach(l => { const img = new Image(); img.src = l.image; });
 
-    const heroImg = document.getElementById('hero-photo');
     let current = 0;
     const FADE_MS = 500;
 
@@ -70,22 +75,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       setTimeout(() => {
         current = (current + 1) % lines.length;
-        heroPrefix.textContent = lines[current].prefix;
-        heroHighlight.textContent = lines[current].highlight;
-        heroHighlight.style.color = GEM_COLORS[current];
+        const line = lines[current];
 
-        // Swap hero image
+        heroPrefix.innerHTML = line.prefix;
+        heroHighlight.textContent = line.highlight;
+        heroHighlight.style.color = line.color;
+
         if (heroImg) {
-          heroImg.src = heroImages[current];
+          heroImg.src = line.image;
           // Force a reflow before fading in to avoid flicker
           heroImg.offsetHeight;
           heroImg.style.opacity = '1';
         }
 
-        // Update indicators
         heroIndicators.forEach((ind, i) => {
           ind.style.width = i === current ? '36px' : '12px';
-          ind.style.background = i === current ? GEM_COLORS[i] : 'var(--grid)';
+          ind.style.background = i === current ? lines[i].color : 'var(--grid)';
         });
 
         // Fade in

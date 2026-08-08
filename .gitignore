@@ -1,0 +1,20 @@
+# Literature, manuscripts, data and personal documents kept alongside the site
+# but never published. Site images (.jpg/.png/.webp/.jpeg) are NOT ignored.
+images/*.pdf
+images/*.docx
+images/*.doc
+images/*.xlsx
+images/*.xls
+images/*.csv
+images/*.tif
+images/*.tiff
+images/*.pptx
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Local preview scratch
+_preview/

@@ -8,7 +8,10 @@
       "WebFetch(domain:doi.org)",
       "WebFetch(domain:api.crossref.org)",
       "WebFetch(domain:scholar.google.com)",
-      "WebFetch(domain:www.researchgate.net)"
+      "WebFetch(domain:www.researchgate.net)",
+      "Bash(sed -E \"s/url\\\\\\(['\\\\\"]?//\")",
+      "Bash(grep -rhoE \"[A-Za-z0-9 _.,%\\(\\)&'-]*images/[^\\\\\"'\\\\\\\\\\)]+\" --include=*.html --include=*.css --include=*.js .)",
+      "Bash(sed -E 's/\\\\?.*$//')"
     ]
   }
 }

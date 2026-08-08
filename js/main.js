@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   /* theme toggle */
   const root = document.documentElement;
   const btn = document.querySelector('.theme-toggle');
+  // Dark is the default, so "no attribute" means dark and light is explicit.
   if (btn) btn.addEventListener('click', () => {
-    const dark = root.getAttribute('data-theme') === 'dark';
-    root.setAttribute('data-theme', dark ? 'light' : 'dark');
-    localStorage.setItem('theme', dark ? 'light' : 'dark');
+    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
   });
 
   /* mobile nav */

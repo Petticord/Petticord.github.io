@@ -6,24 +6,11 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Dark is the default. Light is opt-in via [data-theme="light"], which the
+   toggle sets and the inline head script restores from localStorage. Keeping
+   dark on :root means no light flash before that script runs, and the site
+   still renders correctly with JavaScript disabled. */
 :root {
-  --forest:  #2F6B3A;
-  --farm:    #B57A15;
-  --ink:     #0C0D0C;
-  --bg:      #FFFFFF;
-  --paper:   #F4F4F1;
-  --muted:   #6B6F6B;
-  --rule:    #D8D8D3;
-  --rule-hi: #0C0D0C;
-
-  --sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
-
-  --pad: 64px;
-  --maxw: 1440px;
-}
-
-[data-theme="dark"] {
   --forest:  #6FCB80;
   --farm:    #E0A83C;
   --ink:     #ECECE6;
@@ -32,6 +19,23 @@
   --muted:   #8E938D;
   --rule:    #262924;
   --rule-hi: #ECECE6;
+
+  --sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --pad: 64px;
+  --maxw: 1440px;
+}
+
+[data-theme="light"] {
+  --forest:  #2F6B3A;
+  --farm:    #B57A15;
+  --ink:     #0C0D0C;
+  --bg:      #FFFFFF;
+  --paper:   #F4F4F1;
+  --muted:   #6B6F6B;
+  --rule:    #D8D8D3;
+  --rule-hi: #0C0D0C;
 }
 
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -82,9 +86,10 @@ a { color: inherit; }
   color: var(--ink); padding: 0;
 }
 .theme-toggle:hover { border-color: var(--ink); }
-.theme-icon-moon { display: none; }
-[data-theme="dark"] .theme-icon-sun { display: none; }
-[data-theme="dark"] .theme-icon-moon { display: block; }
+/* The icon shows the current theme: moon in dark (default), sun in light. */
+.theme-icon-sun { display: none; }
+[data-theme="light"] .theme-icon-moon { display: none; }
+[data-theme="light"] .theme-icon-sun { display: block; }
 
 .nav-burger { display: none; background: none; border: 0; cursor: pointer; color: var(--ink); font-size: 20px; }
 

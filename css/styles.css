@@ -267,6 +267,7 @@ a { color: inherit; }
 
 /* ─── GALLERY ─── */
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule); }
+.gallery--3 { grid-template-columns: repeat(3, 1fr); }
 .gallery img {
   width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block;
   background: var(--bg);
@@ -296,19 +297,10 @@ a { color: inherit; }
 @media (max-width: 1100px) {
   :root { --pad: 36px; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  /* Stacked hero: the rotation mixes 3:4 portrait and 4:3 landscape photos,
-     so use a square frame and contain rather than cover. A fixed frame keeps
-     the layout from jumping as the images swap. */
-  .hero-figure {
-    /* align-self must leave stretch, or the item takes the grid row's
-       height (zero, since the only child is absolutely positioned) and
-       aspect-ratio never applies. */
-    align-self: start;
-    min-height: 300px; aspect-ratio: 1 / 1;
-    border-left: none; border-top: 1px solid var(--rule);
-    background: var(--paper);
-  }
-  .hero-figure img { object-fit: contain; }
+  /* Once the hero stacks there is no column for the photo, and a full-width
+     square reads as a wall between the headline and the page. Hide it; the
+     research gallery carries these images instead. */
+  .hero-figure { display: none; }
   .section-head { grid-template-columns: 1fr; gap: 20px; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }

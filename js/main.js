@@ -40,14 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
       b: 'assemble from the ground up.',
       tick: 'var(--ink)', img: 'images/DC_digging.jpg', cap: 'Soil excavation' },
   ];
-  lines.forEach(l => { const i = new Image(); i.src = l.img; });
+  // The photo is hidden below 1100px, so don't spend mobile data preloading
+  // several megabytes of images that will never be shown.
+  const showPhoto = window.matchMedia('(min-width: 1101px)').matches;
+  if (showPhoto) lines.forEach(l => { const i = new Image(); i.src = l.img; });
 
   let n = 0;
   const paint = () => {
     const l = lines[n];
     a.innerHTML = l.a;
     b.innerHTML = l.b;
-    if (img) img.src = l.img;
+    if (img && showPhoto) img.src = l.img;
     if (cap) cap.textContent = l.cap;
     ticks.forEach((t, i) => t.style.background = i === n ? l.tick : 'var(--rule)');
   };

@@ -257,7 +257,7 @@ a { color: inherit; }
 /* ─── METHODS ─── */
 .methods { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); }
 .method { padding: 38px 34px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.method:last-child { border-right: none; }
+.method:nth-child(3n), .method:last-child { border-right: none; }
 .method-k {
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--ink); padding-bottom: 14px;

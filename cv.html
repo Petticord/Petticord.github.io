@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Curriculum vitae of Dan Petticord, ecologist and postdoctoral researcher at the Cary Institute for Ecosystem Studies. 27 peer-reviewed publications and over 712,000 dollars in competitive research funding.">
   <link rel="canonical" href="https://www.danielpetticord.com/cv.html">
   <meta property="og:type" content="website">
@@ -16,217 +16,458 @@
   <meta name="twitter:title" content="CV — Dan Petticord">
   <meta name="twitter:description" content="Curriculum vitae of Dan Petticord, ecologist and postdoctoral researcher at the Cary Institute for Ecosystem Studies. 27 peer-reviewed publications and over 712,000 dollars in competitive research funding.">
   <meta name="twitter:image" content="https://www.danielpetticord.com/images/DanPushingGPR.jpeg">
-  <title>CV — Dan Petticord</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
+<title>CV — Dan Petticord</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body>
 
 <nav class="nav">
   <a href="index.html" class="nav-name">Dan Petticord</a>
   <div class="nav-links">
-    <a href="research.html" class="nav-link">Research</a>
-    <a href="publications.html" class="nav-link">Publications</a>
-    <a href="teaching.html" class="nav-link">Teaching</a>
-    <a href="service.html" class="nav-link">Service</a>
-    <a href="media.html" class="nav-link">Media</a>
-    <a href="cv.html" class="nav-link active">CV</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
-      <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    <a href="research.html" class="nav-link" data-p="research">Research</a>
+    <a href="publications.html" class="nav-link" data-p="publications">Publications</a>
+    <a href="teaching.html" class="nav-link" data-p="teaching">Teaching</a>
+    <a href="service.html" class="nav-link" data-p="service">Service</a>
+    <a href="media.html" class="nav-link" data-p="media">Media</a>
+    <a href="cv.html" class="nav-link active" data-p="cv">CV</a>
+    <a href="about.html" class="nav-link" data-p="about">About</a>
+    <a href="contact.html" class="nav-link" data-p="contact">Contact</a>
+    <button class="theme-toggle" aria-label="Toggle theme">
+      <svg class="theme-icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+      <svg class="theme-icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
     </button>
   </div>
-  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav-burger" aria-label="Menu">☰</button>
 </nav>
 
-<header class="page-header">
-  <div class="page-header-label">Curriculum Vitae</div>
-  <h1 class="page-header-title">Daniel F. Petticord</h1>
-  <p class="page-header-subtitle" style="margin-top:12px;">
-    Cary Institute for Ecosystem Studies · Millbrook, NY<br>
-    <span style="font-family:var(--font-mono);font-size:13px;">petticordd@caryinstitute.org</span>
-  </p>
-  <div style="margin-top:24px;">
-    <a href="Petticord_CV_v5.pdf" target="_blank" class="btn btn--outline" style="font-size:11px;padding:10px 24px;">Download PDF</a>
+<header class="hero" style="padding-bottom:64px;">
+  <div class="wrap">
+    <div class="eyebrow">Curriculum Vitae</div>
+    <h1 class="hero-line" style="max-width:12ch;">Daniel F. Petticord</h1>
+    <p class="hero-note" style="padding-bottom:0;margin-top:30px;">
+      Cary Institute for Ecosystem Studies · Millbrook, NY<br>
+      <span style="font-family:var(--mono);font-size:14px;">petticordd@caryinstitute.org</span>
+    </p>
+    <p style="margin-top:30px;">
+      <a href="Petticord_CV_v5.pdf" target="_blank" style="font-family:var(--mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--rule-hi);padding:11px 22px;display:inline-block;">Download PDF ↓</a>
+    </p>
   </div>
 </header>
 
-<section class="section" style="max-width:900px;">
-
-  <!-- EDUCATION -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Education</div>
-    <div class="cv-entry">
-      <div class="cv-date">2020–2025</div>
-      <div>
-        <div class="cv-role">Ph.D., Ecology and Evolutionary Biology</div>
-        <div class="cv-place">Cornell University — Ithaca, NY</div>
-        <div class="cv-detail">National Science Foundation Graduate Research Fellow<br>Dissertation: The phytoremediation and conservation of phosphorus.<br>Advisor: Dr. Jed P. Sparks</div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">01 — Education</div>
+    </div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2020–2025</b>Cornell University — Ithaca, NY</div>
+        <div>
+          <h3 class="row-title">Ph.D., Ecology and Evolutionary Biology</h3>
+          <p class="row-body">National Science Foundation Graduate Research Fellow<br>Dissertation: The phytoremediation and conservation of phosphorus.<br>Advisor: Dr. Jed P. Sparks</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2015–2019</b>Princeton University — Princeton, NJ</div>
+        <div>
+          <h3 class="row-title">A.B. (cum laude), Ecology and Evolutionary Biology</h3>
+          <p class="row-body">Minor: Environmental Science<br>Thesis: The diet and movement of the Kenyan leopard tortoise.<br>Mentors: Dr. Robert Pringle, Dr. Andy Dobson, Dr. Bridgett VonHoldt, Dr. Daniel Rubenstein, Dr. Simon Levin</p>
+        </div>
       </div>
     </div>
-    <div class="cv-entry">
-      <div class="cv-date">2015–2019</div>
-      <div>
-        <div class="cv-role">A.B. (cum laude), Ecology and Evolutionary Biology</div>
-        <div class="cv-place">Princeton University — Princeton, NJ</div>
-        <div class="cv-detail">Minor: Environmental Science<br>Thesis: The diet and movement of the Kenyan leopard tortoise.<br>Mentors: Dr. Robert Pringle, Dr. Andy Dobson, Dr. Bridgett VonHoldt, Dr. Daniel Rubenstein, Dr. Simon Levin</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">02 — Professional Experience</div>
+    </div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2025–</b>Cary Institute for Ecosystem Studies — Millbrook, NY</div>
+        <div>
+          <h3 class="row-title">Postdoctoral Associate, MESS Lab</h3>
+          <p class="row-body">Advisor: Dr. Jane Lucas</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2024–2025</b>The Everglades Foundation</div>
+        <div>
+          <h3 class="row-title">ForEverglades Research Enhancement Fellow</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2021–2022</b>Archbold Biological Station — Venus, FL</div>
+        <div>
+          <h3 class="row-title">Visiting Scholar</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2020–2022</b>Cornell Stable Isotope Laboratory — Ithaca, NY</div>
+        <div>
+          <h3 class="row-title">Stable Isotope Research Technician</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2019–2020</b>Smithsonian Tropical Research Institute — Panama</div>
+        <div>
+          <h3 class="row-title">Short-Term Research Fellow / Tropical Forest Research Intern</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2018–2019</b>Princeton University, Zhang Laboratory</div>
+        <div>
+          <h3 class="row-title">GC-FID Research Technician</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2017–2019</b>Princeton University, vonHoldt Laboratory</div>
+        <div>
+          <h3 class="row-title">Genetics Research Technician</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2017</b>Princeton High Meadows Environmental Institute</div>
+        <div>
+          <h3 class="row-title">Drone Research Technician</h3>
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- PROFESSIONAL EXPERIENCE -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Professional Experience</div>
-    <div class="cv-entry">
-      <div class="cv-date">2025–</div>
-      <div><div class="cv-role">Postdoctoral Associate, MESS Lab</div><div class="cv-place">Cary Institute for Ecosystem Studies — Millbrook, NY</div><div class="cv-detail">Advisor: Dr. Jane Lucas</div></div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">03 — Funding &amp; Awards</div>
     </div>
-    <div class="cv-entry">
-      <div class="cv-date">2024–2025</div>
-      <div><div class="cv-role">ForEverglades Research Enhancement Fellow</div><div class="cv-place">The Everglades Foundation</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2021–2022</div>
-      <div><div class="cv-role">Visiting Scholar</div><div class="cv-place">Archbold Biological Station — Venus, FL</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2020–2022</div>
-      <div><div class="cv-role">Stable Isotope Research Technician</div><div class="cv-place">Cornell Stable Isotope Laboratory — Ithaca, NY</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2019–2020</div>
-      <div><div class="cv-role">Short-Term Research Fellow / Tropical Forest Research Intern</div><div class="cv-place">Smithsonian Tropical Research Institute — Panama</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2018–2019</div>
-      <div><div class="cv-role">GC-FID Research Technician</div><div class="cv-place">Princeton University, Zhang Laboratory</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2017–2019</div>
-      <div><div class="cv-role">Genetics Research Technician</div><div class="cv-place">Princeton University, vonHoldt Laboratory</div></div>
-    </div>
-    <div class="cv-entry">
-      <div class="cv-date">2017</div>
-      <div><div class="cv-role">Drone Research Technician</div><div class="cv-place">Princeton High Meadows Environmental Institute</div></div>
+    <div class="prose rise" style="margin-bottom:38px;"><p>Total competitive funding awarded (including fellowships and scholarships): <strong style="color:var(--text);">$712,342</strong><br>
+      Pending: USDA Postdoctoral Fellowship ($244,000)</p></div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2026</b></div>
+        <div>
+          <h3 class="row-title">USDA New Investigator Grant — From Manure to Market ($294,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2026</b></div>
+        <div>
+          <h3 class="row-title">Cary Institute Science Innovation Fund ($62,859)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2025</b></div>
+        <div>
+          <h3 class="row-title">Cornell Atkinson Graduate Research Grant ($7,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2025</b></div>
+        <div>
+          <h3 class="row-title">ForEverglades Research Enhancement Grant ($30,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024</b></div>
+        <div>
+          <h3 class="row-title">Orenstein, Susan Lynch, Betty Miller Francis, Graduate Research, Mellon, Sigma Xi, Cary Bentley Holden Awards</h3>
+          <p class="row-body">Combined: $11,763</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2023</b></div>
+        <div>
+          <h3 class="row-title">Cornell Mellon, Sigma Xi, and Graduate Student Research Awards</h3>
+          <p class="row-body">Combined: $2,500</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2022</b></div>
+        <div>
+          <h3 class="row-title">Archbold Biological Station Visiting Scholar Award ($2,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2020</b></div>
+        <div>
+          <h3 class="row-title">National Science Foundation Graduate Research Fellowship ($159,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2019</b></div>
+        <div>
+          <h3 class="row-title">Smithsonian Tropical Research Internship Award ($10,500)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2019</b></div>
+        <div>
+          <h3 class="row-title">Fulbright Fellowship ($45,000)</h3>
+          <p class="row-body">Awarded, declined</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2018</b></div>
+        <div>
+          <h3 class="row-title">Curtis W. McGraw Class of 1919 Scholarship ($58,970)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2018</b></div>
+        <div>
+          <h3 class="row-title">Becky Colvin Memorial Award ($17,500); ESA SEEDs Leadership Award ($1,000)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2017</b></div>
+        <div>
+          <h3 class="row-title">Princeton Environmental Institute Smith and Newton Scholar ($7,500); Thesis Award ($2,500); CST Award ($250)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2019</b></div>
+        <div>
+          <h3 class="row-title">Prize for Most Outstanding Field-Based Undergraduate Thesis, Princeton University</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2019</b></div>
+        <div>
+          <h3 class="row-title">Elected to Sigma Xi Scientific Research Honor Society</h3>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- FUNDING -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Funding &amp; Awards</div>
-    <p style="font-family:var(--font-sans);font-size:14px;color:var(--muted);margin-bottom:20px;">
-      Total competitive funding awarded (including fellowships and scholarships): <strong style="color:var(--text);">$712,342</strong><br>
-      Pending: USDA Postdoctoral Fellowship ($244,000)
-    </p>
-    <div class="cv-entry"><div class="cv-date">2026</div><div><div class="cv-role">USDA New Investigator Grant — From Manure to Market ($294,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2026</div><div><div class="cv-role">Cary Institute Science Innovation Fund ($62,859)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2025</div><div><div class="cv-role">Cornell Atkinson Graduate Research Grant ($7,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2025</div><div><div class="cv-role">ForEverglades Research Enhancement Grant ($30,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2024</div><div><div class="cv-role">Orenstein, Susan Lynch, Betty Miller Francis, Graduate Research, Mellon, Sigma Xi, Cary Bentley Holden Awards</div><div class="cv-detail">Combined: $11,763</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2023</div><div><div class="cv-role">Cornell Mellon, Sigma Xi, and Graduate Student Research Awards</div><div class="cv-detail">Combined: $2,500</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2022</div><div><div class="cv-role">Archbold Biological Station Visiting Scholar Award ($2,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2020</div><div><div class="cv-role">National Science Foundation Graduate Research Fellowship ($159,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2019</div><div><div class="cv-role">Smithsonian Tropical Research Internship Award ($10,500)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2019</div><div><div class="cv-role">Fulbright Fellowship ($45,000)</div><div class="cv-detail">Awarded, declined</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2018</div><div><div class="cv-role">Curtis W. McGraw Class of 1919 Scholarship ($58,970)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2018</div><div><div class="cv-role">Becky Colvin Memorial Award ($17,500); ESA SEEDs Leadership Award ($1,000)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2017</div><div><div class="cv-role">Princeton Environmental Institute Smith and Newton Scholar ($7,500); Thesis Award ($2,500); CST Award ($250)</div></div></div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">04 — Publications</div>
+    </div>
+    <div class="prose rise" style="margin-bottom:38px;"><p>27 peer-reviewed publications. See the <a href="publications.html" style="color:var(--warm);font-weight:500;">publications page</a> for selected work with DOIs, or the PDF above for the complete list.</p></div>
+  </div>
+</section>
 
-    <div style="margin-top:24px;">
-      <div class="cv-section-title" style="font-size:11px;border-bottom-width:1px;">Honors</div>
-      <div class="cv-entry"><div class="cv-date">2019</div><div><div class="cv-role">Prize for Most Outstanding Field-Based Undergraduate Thesis, Princeton University</div></div></div>
-      <div class="cv-entry"><div class="cv-date">2019</div><div><div class="cv-role">Elected to Sigma Xi Scientific Research Honor Society</div></div></div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">05 — Invited Talks &amp; Selected Presentations</div>
+    </div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2026</b>Ecological Society of America, UT</div>
+        <div>
+          <h3 class="row-title">"Does a cross-domain 'rule of life' predict how soil communities respond to independent and interacting stressors?"</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2026</b>Soil Ecology Society Meeting, NJ</div>
+        <div>
+          <h3 class="row-title">"Compound stress drives cross-kingdom convergence on conservative life-history strategies"</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2025</b>380:608 Ground Penetrating Radar, Rutgers University</div>
+        <div>
+          <h3 class="row-title">"Ground penetrating radar uncovers buried 'islands of fertility'..."</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2025</b>Association for Tropical Biology and Conservation, Oaxaca, Mexico</div>
+        <div>
+          <h3 class="row-title">"Farms need fertilizer, forests don't."</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024</b>Cornell Adult University Summer Lecture Series</div>
+        <div>
+          <h3 class="row-title">"Plat du Jour — Eating in the Modern Era"</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024</b>Water Institute Symposium, University of Florida</div>
+        <div>
+          <h3 class="row-title">"Grass species influences phosphorus losses..."</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024</b>Bambi Seminar Series, Smithsonian Tropical Research Institute</div>
+        <div>
+          <h3 class="row-title">"Phytoremediation of legacy soil phosphorus"</h3>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- PUBLICATIONS (brief - link to full page) -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Publications</div>
-    <p style="font-family:var(--font-sans);font-size:14px;color:var(--muted);margin-bottom:16px;">
-      27 peer-reviewed publications. See the <a href="publications.html" style="color:var(--warm);font-weight:500;">publications page</a> for selected work with DOIs, or the PDF above for the complete list.
-    </p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">06 — Teaching</div>
+    </div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2026</b></div>
+        <div>
+          <h3 class="row-title">Lecturer: Fundamentals of Ecosystem Ecology</h3>
+          <p class="row-body">Cary Institute for Ecosystem Studies</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>Fall 2024</b></div>
+        <div>
+          <h3 class="row-title">Instructor of Record: Topics in Biogeochemistry (BIOEE 7600)</h3>
+          <p class="row-body">Graduate seminar course on biogeochemistry</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>Fall 2023</b></div>
+        <div>
+          <h3 class="row-title">Instructor of Record: What's for Dinner (BIOEE 1640)</h3>
+          <p class="row-body">Undergraduate course on food systems, sustainability, and nutrition</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>Spr. 2024</b></div>
+        <div>
+          <h3 class="row-title">Co-Instructor: Graduate Field Course (BIOEE 6602)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>Spr. 2022</b></div>
+        <div>
+          <h3 class="row-title">Co-Instructor: Quantitative Ecology (BIOEE 4940)</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2021–2024</b></div>
+        <div>
+          <h3 class="row-title">TA: Advanced Ecology (BIOEE 3610)</h3>
+          <p class="row-body">Lab TA, multiple semesters</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>Sum. 2023</b></div>
+        <div>
+          <h3 class="row-title">TA: Introduction to Evolution &amp; Diversity (BIOEE 1781)</h3>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- INVITED TALKS -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Invited Talks &amp; Selected Presentations</div>
-    <div class="cv-entry"><div class="cv-date">2026</div><div><div class="cv-role">"Does a cross-domain 'rule of life' predict how soil communities respond to independent and interacting stressors?"</div><div class="cv-place">Ecological Society of America, UT</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2026</div><div><div class="cv-role">"Compound stress drives cross-kingdom convergence on conservative life-history strategies"</div><div class="cv-place">Soil Ecology Society Meeting, NJ</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2025</div><div><div class="cv-role">"Ground penetrating radar uncovers buried 'islands of fertility'..."</div><div class="cv-place">380:608 Ground Penetrating Radar, Rutgers University</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2025</div><div><div class="cv-role">"Farms need fertilizer, forests don't."</div><div class="cv-place">Association for Tropical Biology and Conservation, Oaxaca, Mexico</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2024</div><div><div class="cv-role">"Plat du Jour — Eating in the Modern Era"</div><div class="cv-place">Cornell Adult University Summer Lecture Series</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2024</div><div><div class="cv-role">"Grass species influences phosphorus losses..."</div><div class="cv-place">Water Institute Symposium, University of Florida</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2024</div><div><div class="cv-role">"Phytoremediation of legacy soil phosphorus"</div><div class="cv-place">Bambi Seminar Series, Smithsonian Tropical Research Institute</div></div></div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">07 — Mentoring</div>
+    </div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024–2025</b></div>
+        <div>
+          <h3 class="row-title">Gen-Chang Hsu</h3>
+          <p class="row-body">Mentee co-author. Research on carnivorous plant ecology, resulting in publication in Oikos.</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2024</b></div>
+        <div>
+          <h3 class="row-title">Charlotte Tysall (Cornell '26)</h3>
+          <p class="row-body">Field assistant for phosphorus research, FL. Founded Cornell ESA SEEDs chapter.</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2022–2023</b></div>
+        <div>
+          <h3 class="row-title">Ginny Halterman (Cornell '23)</h3>
+          <p class="row-body">Advised on honors thesis and NSF GRFP. Currently M.S. student, U. of Delaware.</p>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--farm);">
+        <div class="row-meta"><b>2021–2022</b></div>
+        <div>
+          <h3 class="row-title">Daniela Rodriguez-Chavez (Cornell '22)</h3>
+          <p class="row-body">Advised on honors thesis and NSF GRFP. Currently Ph.D. candidate and NSF GRFP Fellow, UC Berkeley.</p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- TEACHING -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Teaching</div>
-    <div class="cv-entry"><div class="cv-date">2026</div><div><div class="cv-role">Lecturer: Fundamentals of Ecosystem Ecology</div><div class="cv-detail">Cary Institute for Ecosystem Studies</div></div></div>
-    <div class="cv-entry"><div class="cv-date">Fall 2024</div><div><div class="cv-role">Instructor of Record: Topics in Biogeochemistry (BIOEE 7600)</div><div class="cv-detail">Graduate seminar course on biogeochemistry</div></div></div>
-    <div class="cv-entry"><div class="cv-date">Fall 2023</div><div><div class="cv-role">Instructor of Record: What's for Dinner (BIOEE 1640)</div><div class="cv-detail">Undergraduate course on food systems, sustainability, and nutrition</div></div></div>
-    <div class="cv-entry"><div class="cv-date">Spr. 2024</div><div><div class="cv-role">Co-Instructor: Graduate Field Course (BIOEE 6602)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">Spr. 2022</div><div><div class="cv-role">Co-Instructor: Quantitative Ecology (BIOEE 4940)</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2021–2024</div><div><div class="cv-role">TA: Advanced Ecology (BIOEE 3610)</div><div class="cv-detail">Lab TA, multiple semesters</div></div></div>
-    <div class="cv-entry"><div class="cv-date">Sum. 2023</div><div><div class="cv-role">TA: Introduction to Evolution &amp; Diversity (BIOEE 1781)</div></div></div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">08 — Service &amp; Peer Review</div>
+    </div>
+    <div class="prose rise" style="margin-bottom:38px;"><p>Ad-hoc reviewer for: Plant Biology, Ecology and Evolution, Environmental Microbiology, Pedosphere, Global Change Biology</p></div>
+    <div class="rows rise">
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2022–present</b></div>
+        <div>
+          <h3 class="row-title">Writing and Data Consultant, HighEdit Consulting</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2020–2025</b></div>
+        <div>
+          <h3 class="row-title">Ad-hoc grant reviewer, Cornell College of Arts and Life Sciences</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2023–2024</b></div>
+        <div>
+          <h3 class="row-title">Treasurer, Cornell EEB Graduate Student Association</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2021–2023</b></div>
+        <div>
+          <h3 class="row-title">President, Cornell EEB Graduate Student Association</h3>
+        </div>
+      </div>
+      <div class="row" style="--accent:var(--forest);">
+        <div class="row-meta"><b>2018</b></div>
+        <div>
+          <h3 class="row-title">Founder and President, Princeton ESA SEEDs Chapter</h3>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- MENTORING -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Mentoring</div>
-    <div class="cv-entry"><div class="cv-date">2024–2025</div><div><div class="cv-role">Gen-Chang Hsu</div><div class="cv-detail">Mentee co-author. Research on carnivorous plant ecology, resulting in publication in Oikos.</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2024</div><div><div class="cv-role">Charlotte Tysall (Cornell '26)</div><div class="cv-detail">Field assistant for phosphorus research, FL. Founded Cornell ESA SEEDs chapter.</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2022–2023</div><div><div class="cv-role">Ginny Halterman (Cornell '23)</div><div class="cv-detail">Advised on honors thesis and NSF GRFP. Currently M.S. student, U. of Delaware.</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2021–2022</div><div><div class="cv-role">Daniela Rodriguez-Chavez (Cornell '22)</div><div class="cv-detail">Advised on honors thesis and NSF GRFP. Currently Ph.D. candidate and NSF GRFP Fellow, UC Berkeley.</div></div></div>
-  </div>
-
-  <!-- SERVICE -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Service &amp; Peer Review</div>
-    <div class="cv-entry"><div class="cv-date">2022–present</div><div><div class="cv-role">Writing and Data Consultant, HighEdit Consulting</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2020–2025</div><div><div class="cv-role">Ad-hoc grant reviewer, Cornell College of Arts and Life Sciences</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2023–2024</div><div><div class="cv-role">Treasurer, Cornell EEB Graduate Student Association</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2021–2023</div><div><div class="cv-role">President, Cornell EEB Graduate Student Association</div></div></div>
-    <div class="cv-entry"><div class="cv-date">2018</div><div><div class="cv-role">Founder and President, Princeton ESA SEEDs Chapter</div></div></div>
-    <p style="font-family:var(--font-sans);font-size:13px;color:var(--muted);margin-top:12px;">
-      Ad-hoc reviewer for: Plant Biology, Ecology and Evolution, Environmental Microbiology, Pedosphere, Global Change Biology
-    </p>
-  </div>
-
-  <!-- ADDITIONAL -->
-  <div class="cv-section fade-in">
-    <div class="cv-section-title">Additional Information</div>
-    <div style="font-family:var(--font-sans);font-size:14px;color:var(--muted);line-height:1.8;">
-      <p><strong style="color:var(--text);">Languages:</strong> English (native), Spanish (developing), French (developing)</p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rise">
+      <div class="section-idx">09 — Additional Information</div>
+    </div>
+    <div class="prose rise"><p><strong style="color:var(--text);">Languages:</strong> English (native), Spanish (developing), French (developing)</p>
       <p><strong style="color:var(--text);">Programming:</strong> R, Python, Bash</p>
       <p><strong style="color:var(--text);">Technical Skills:</strong> Isotope ratio mass spectrometry (EA-IRMS, GC-IRMS), GC-FID, molecular genetics and genomics, soil metagenomic analysis, clean lab fungal isolation, UAS/drone remote sensing, ground-penetrating radar</p>
-      <p><strong style="color:var(--text);">Athletics:</strong> Princeton Football (NCAA Division I, 2015–2019); Instructor, Cornell Physical Education — Weightlifting (Fall 2023, Fall 2024)</p>
-    </div>
+      <p><strong style="color:var(--text);">Athletics:</strong> Princeton Football (NCAA Division I, 2015–2019); Instructor, Cornell Physical Education — Weightlifting (Fall 2023, Fall 2024)</p></div>
   </div>
-
 </section>
 
-<section class="contact-section fade-in">
-  <div class="contact-title">Get in touch.</div>
-  <div class="contact-desc">I'm always interested in new collaborations, speaking invitations, and conversations about ecology and sustainability.</div>
-  <a href="mailto:petticordd@caryinstitute.org" class="contact-email">petticordd@caryinstitute.org</a>
+<section class="cta">
+  <div class="wrap">
+    <h2 class="cta-h">Get in touch.</h2>
+    <a class="cta-mail" href="mailto:petticordd@caryinstitute.org" style="--accent:var(--farm);">petticordd@caryinstitute.org</a>
+  </div>
 </section>
 
-<footer class="footer">
+<footer class="foot">
+  <div>Dan Petticord · Cary Institute for Ecosystem Studies · Millbrook, NY</div>
   <div>
-    <div class="footer-name">Dan Petticord</div>
-    <div class="footer-sub">Cary Institute for Ecosystem Studies · Millbrook, NY</div>
-  </div>
-  <div class="footer-links">
-    <a href="https://scholar.google.com/citations?user=s1wx64YAAAAJ&hl=en" target="_blank" class="footer-link">Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-1764-6321" target="_blank" class="footer-link">ORCID</a>
-    <a href="https://github.com/Dpetticord3" target="_blank" class="footer-link">GitHub</a>
-    <a href="https://www.linkedin.com/in/dpetticord/" target="_blank" class="footer-link">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=s1wx64YAAAAJ&hl=en">Scholar</a>
+    <a href="https://orcid.org/0000-0002-1764-6321">ORCID</a>
+    <a href="https://github.com/Dpetticord3">GitHub</a>
+    <a href="https://www.linkedin.com/in/dpetticord/">LinkedIn</a>
   </div>
 </footer>
 

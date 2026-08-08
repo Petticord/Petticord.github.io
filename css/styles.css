@@ -300,7 +300,11 @@ a { color: inherit; }
      so use a square frame and contain rather than cover. A fixed frame keeps
      the layout from jumping as the images swap. */
   .hero-figure {
-    min-height: 0; aspect-ratio: 1 / 1;
+    /* align-self must leave stretch, or the item takes the grid row's
+       height (zero, since the only child is absolutely positioned) and
+       aspect-ratio never applies. */
+    align-self: start;
+    min-height: 300px; aspect-ratio: 1 / 1;
     border-left: none; border-top: 1px solid var(--rule);
     background: var(--paper);
   }
